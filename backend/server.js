@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 //importing local
 import connectDb from './config/mongoDb.js';
 import authRouter from './routes/authRouter.js';
+import userRouter from './routes/userRouter.js';
 
 dotenv.config();
 
@@ -22,7 +23,8 @@ app.use(cors({credentials:true}));
 
 //api endpoints
 app.get('/', (req, res)=>{res.send("hello there beautiful")})
-app.use('/api', authRouter)
+app.use('/api/auth', authRouter)
+app.use('/api/user', userRouter)
 
 
 //server

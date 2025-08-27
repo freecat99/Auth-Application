@@ -46,3 +46,20 @@ body, html{
   box-shadow: none
   
 }
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerImage{
+  width: 300px;
+  aspect-ratio: 1;
+}
+
+.header .helloImage{
+  aspect-ratio: 1;
+  width: 50px;
+}
+

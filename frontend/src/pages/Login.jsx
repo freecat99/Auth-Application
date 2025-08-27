@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 
 const Login = () => {
   return (
     <div>
-      <h1>Login</h1>
+      <Navbar/>
+      <Header/>
     </div>
   )
 }

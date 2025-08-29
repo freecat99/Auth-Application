@@ -1,5 +1,8 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -9,6 +12,7 @@ import ResetPassword from './pages/ResetPassword'
 const App = () => {
   return (
     <div className='text-3xl'>
+      <ToastContainer/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/home' element={<Home/>}/>
